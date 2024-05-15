@@ -20,9 +20,9 @@ export default function Navbar() {
         {/* Top left corner heading */}
         <Link to="/" className="navbar-logo">
           <img
-            src="https://res.cloudinary.com/drplnrrww/image/upload/v1715515622/homeGallery/logo1_otdeu7.png"
-            alt="logo-retina-1"
+            src="/img/Logo.png"
             border="0"
+            style={{width: "10rem"}}
           />
         </Link>
         {/* Nav Icon */}
@@ -44,8 +44,8 @@ export default function Navbar() {
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="/about" className="nav-links">
-              ABOUT
+            <Link to="/portfolio" className="nav-links">
+              PORTFOLIO
             </Link>
           </li>
           <li className="nav-item">

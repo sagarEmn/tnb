@@ -24,6 +24,10 @@ export default function ContactUs() {
           <div className={styles["title-description-image-container"]}>
             <div className={styles["title-description-flexGap"]}>
               <p className={styles["first-line"]}>Contact Us</p>
+              <p className={styles["third-line"]}>
+                "We don't want to push our ideas on to customers, <br /> we
+                simply want to make what they want."
+              </p>
 
               <div className={styles["contact-us-information"]}>
                 <div className={styles["contact-icons"]}>
@@ -31,10 +35,12 @@ export default function ContactUs() {
                 </div>
 
                 <div className={styles["contact-details"]}>
-                  <p>HQ DUBAI OFFICE:</p>
-                  <p>One RX Interior Decoration LLC Plot No - 598-709 </p>
-                  <p>Next to Dubai Metal Grating & Manufcturing LLC DIP - 1 </p>
-                  <p>Dubai / UAE </p>
+                  <p> บริษัท ทีเอ็นบี ซอร์ส จำกัด 20/1 (ห้องK19/2)</p>
+                  <p>
+                    {" "}
+                    ถนนพัฒนาชนบท 3 แขวงคลองสองต้นนุ่น เขตลาดกระบัง
+                    จังหวัดกรุงเทพมหานคร 10520 โทร.{" "}
+                  </p>
                 </div>
               </div>
 
@@ -44,29 +50,9 @@ export default function ContactUs() {
                 </div>
 
                 <div className={styles["contact-details"]}>
-                  <p>+971 4 590 4700</p>
-                </div>
-              </div>
-
-              <div className={styles["contact-us-information"]}>
-                <div className={styles["contact-icons"]}>
-                  <img src={contactImageSources[2]} alt="Map Icon" />
-                </div>
-
-                <div className={styles["contact-details"]}>
-                  <p>TURKEY OFFICE:</p>
-                  <p>Orta Mah. İbrahim Ağa Cad. No:18 Kısmet Han </p>
-                  <p>Zemin kat Bayrampaşa, İstanbul / TÜRKİYE </p>
-                </div>
-              </div>
-
-              <div className={styles["contact-us-information"]}>
-                <div className={styles["contact-icons"]}>
-                  <img src={contactImageSources[3]} alt="Phone Icon" />
-                </div>
-
-                <div className={styles["contact-details"]}>
-                  <p>+90 212 437 8072</p>
+                  <p> Tel 02-138-9530</p>
+                  <p> Mobile 09-4857-4030</p>
+                  <p> เลขประจำตัวผู้เสียภาษี 0 1 0 5 5 5 9 0 8 9 8 1 7</p>
                 </div>
               </div>
 
@@ -76,17 +62,19 @@ export default function ContactUs() {
                 </div>
 
                 <div className={styles["contact-details"]}>
-                  <p>info@one-rx.com</p>
+                  <p>tnbsource.th@gmail.com</p>
                 </div>
               </div>
 
               <div className={styles["contact-us-information"]}>
                 <div className={styles["contact-icons"]}>
-                  <img src={contactImageSources[5]} alt="Mail Icon" />
+                  <img src={contactImageSources[1]} alt="Phone Icon" />
                 </div>
 
                 <div className={styles["contact-details"]}>
-                  <p>infoturkey@one-rx.com</p>
+                  <p> +66 (0) 948 574 030</p>
+                  <p> 0 617 849 898</p>
+                  <p> 02-138-9530</p>
                 </div>
               </div>
             </div>
@@ -122,13 +110,41 @@ export default function ContactUs() {
                   ></textarea>
                 </div>
               </div>
+
+              <div className={styles["contact-us-information"]}>
+                <div className={styles["contact-icons"]}>
+                  <img src={contactImageSources[4]} alt="Mail Icon" />
+                </div>
+
+                <div className={styles["contact-details"]}>
+                  <p>tnbsource.th@gmail.com</p>
+                </div>
+              </div>
+
               <p className={styles["description-one"]}>
-                If you are interested in working with us then please dop us a
-                line, or contact us below informations, we would love to hear
-                from you.
+                TNB Source Co., Ltd is multi purpose business group based in
+                Bangkok Thailand. We're specialised in furniture installation,
+                interior design, civil work, showroom decor, renovations and
+                construction related works.
               </p>
+
+              <div className={styles["contact-us-information"]}>
+                <div className={styles["contact-icons"]}>
+                  <img src={contactImageSources[0]} alt="Map Icon" />
+                </div>
+
+                <div className={styles["contact-details"]}>
+                  <p> Unit 20/1, Building (k19/2)</p>
+                  <p>
+                  Soi Phatthana Chonnabot - 3,
+                  </p>
+                  <p> Khlong Song Ton Nun, Lat Krabang,</p>
+                  <p> Bangkok 10520</p>
+                </div>
+              </div>
             </div>
           </div>
+          © Copyright TNB Sources Co., Ltd. All rights reserved.
         </div>
       </div>
     </>

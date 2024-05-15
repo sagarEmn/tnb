@@ -6,7 +6,6 @@ import ContactUs from "../Home/ContactUs/ContactUs";
 import VideoSection from "../VideoSection/VideoSection";
 import { videoLink } from "../globalImageSources";
 import servicesImageSources from "./ServicesImageSources";
-import aboutImageSources from "../About/AboutImage";
 
 const Services = () => {
   useEffect(() => {
