@@ -1,4 +1,5 @@
 import React from "react";
+import local from "./local.module.css";
 import "../../../index.css";
 export default function TeamSection() {
   const team = [
@@ -122,7 +123,7 @@ export default function TeamSection() {
           <div className="mt-12">
             <ul className="grid gap-8 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
               {team.map((item, idx) => (
-                <li key={idx}>
+                <li key={idx} className={local['hover-big']}>
                   <div className="w-24 h-24 mx-auto">
                     <img
                       src={item.avatar}

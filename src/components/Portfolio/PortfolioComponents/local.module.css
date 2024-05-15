@@ -1,0 +1,5 @@
+.hover-big:hover {
+  transform: scale(1.4); /* Increase the size by 10% */
+  transition: transform 0.3s ease; /* Add smooth transition effect */
+  border: 3px solid white; /* Shiny border color */
+}

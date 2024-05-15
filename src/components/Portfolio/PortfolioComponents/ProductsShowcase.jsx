@@ -1,3 +1,4 @@
+import local from "./local.module.css";
 export default function ProductsShowcase({ subTitle, products }) {
   return (
     <>
@@ -10,7 +11,7 @@ export default function ProductsShowcase({ subTitle, products }) {
             {products.map((item, idx) => (
               <div
                 key={idx}
-                className="flex flex-col items-center w-72 mx-4 mb-8 border-3 border-gray-700 rounded-md p-4 bg-gray-700"
+                className={`flex flex-col items-center w-72 mx-4 mb-8 border-3 border-gray-700 rounded-md p-4 bg-gray-700 ${local["hover-big"]}`}
               >
                 <div className="w-full h-full">
                   <img
