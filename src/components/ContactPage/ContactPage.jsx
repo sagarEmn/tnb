@@ -94,7 +94,8 @@ const ContactPage = () => {
             </div>
           </section>
         </div>
-      </div>
+      </div>`
+      `
       <ContactUs />
     </>
   );

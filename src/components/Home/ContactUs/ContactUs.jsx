@@ -3,6 +3,7 @@ import styles from "../../../global.module.css";
 import { contactImageSources } from "../../globalImageSources";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Footer from "../../Footer/Footer";
 
 export default function ContactUs() {
   useEffect(() => {
@@ -21,7 +22,7 @@ export default function ContactUs() {
           className={styles["padding-group-middle-grayBackground"]}
           data-aos="fade-up"
         >
-          <div className={styles["title-description-image-container"]}>
+          <div className={styles["title-description-image-container-grid"]}>
             <div className={styles["title-description-flexGap"]}>
               <p className={styles["first-line"]}>Contact Us</p>
               <p className={styles["third-line"]}>
@@ -110,41 +111,8 @@ export default function ContactUs() {
                   ></textarea>
                 </div>
               </div>
-
-              <div className={styles["contact-us-information"]}>
-                <div className={styles["contact-icons"]}>
-                  <img src={contactImageSources[4]} alt="Mail Icon" />
-                </div>
-
-                <div className={styles["contact-details"]}>
-                  <p>tnbsource.th@gmail.com</p>
-                </div>
-              </div>
-
-              <p className={styles["description-one"]}>
-                TNB Source Co., Ltd is multi purpose business group based in
-                Bangkok Thailand. We're specialised in furniture installation,
-                interior design, civil work, showroom decor, renovations and
-                construction related works.
-              </p>
-
-              <div className={styles["contact-us-information"]}>
-                <div className={styles["contact-icons"]}>
-                  <img src={contactImageSources[0]} alt="Map Icon" />
-                </div>
-
-                <div className={styles["contact-details"]}>
-                  <p> Unit 20/1, Building (k19/2)</p>
-                  <p>
-                  Soi Phatthana Chonnabot - 3,
-                  </p>
-                  <p> Khlong Song Ton Nun, Lat Krabang,</p>
-                  <p> Bangkok 10520</p>
-                </div>
-              </div>
             </div>
           </div>
-          © Copyright TNB Sources Co., Ltd. All rights reserved.
         </div>
       </div>
     </>

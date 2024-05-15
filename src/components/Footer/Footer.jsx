@@ -21,13 +21,41 @@ const Footer = () => {
         <div
           className={`${globalStyles["padding-container"]} ${globalStyles["footer-flow"]}`}
         >
-          <p className={globalStyles["description-one-small"]}>
-            2023 © OneRX All Rights Reserved
+          <div className={globalStyles["contact-us-information"]}>
+            <div className={globalStyles["contact-icons"]}>
+              <img src={contactImageSources[4]} alt="Mail Icon" />
+            </div>
+
+            <div className={globalStyles["contact-details"]}>
+              <p>tnbsource.th@gmail.com</p>
+            </div>
+          </div>
+          <p
+            className={`${globalStyles["description-one"]} ${globalStyles["centered-paragraph"]}`}
+          >
+            TNB Source Co., Ltd is multi purpose business group based in Bangkok
+            Thailand. We're specialised in furniture installation, interior
+            design, civil work, showroom decor, renovations and construction
+            related works.
           </p>
-          <p className={globalStyles["description-one-small"]}>
-            2023 © OneRX All Rights Reserved
-          </p>
-          
+
+          <div
+            className={`${globalStyles["contact-details-align-center"]} ${globalStyles["contact-details-grid"]}`}
+          >
+            <div className={globalStyles["contact-icons"]}>
+              <img src={contactImageSources[0]} alt="Map Icon" />
+            </div>
+            <div className={globalStyles["contact-details"]}>
+              <p> Unit 20/1, Building (k19/2)</p>
+              <p>Soi Phatthana Chonnabot - 3,</p>
+              <p> Khlong Song Ton Nun, Lat Krabang,</p>
+              <p> Bangkok 10520</p>
+            </div>
+          </div>
+
+          <div className={globalStyles["copyright-bottom-padding-container"]}>
+            © Copyright TNB Sources Co., Ltd. All rights reserved.
+          </div>
         </div>
       </div>
     </>

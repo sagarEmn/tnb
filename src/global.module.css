@@ -1,5 +1,48 @@
 /* common component style properties */
 
+.title-description-image-container-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(300px, 1fr)
+  ); /* Adjust minmax values based on your design */
+  grid-gap: 20px; /* Adjust gap as needed */
+}
+
+.copyright-bottom-padding-container {
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.contact-details-align-center {
+  flex: 1;
+  text-align: center;
+  color: #4c4d4f;
+  font-family: "Roboto", Sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+}
+.contact-details-grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 10px;
+  align-items: center;
+  justify-items: center;
+}
+.centered-paragraph {
+  padding: 2rem 0;
+  max-width: 70vw;
+  text-align: center;
+  margin: 0 auto; /* Center the paragraph */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .contact-details-grid {
+    grid-template-columns: 1fr; /* Change to single column layout on smaller screens */
+  }
+}
+
 .outer-container {
   padding: 0 10rem;
   box-sizing: border-box;
@@ -22,6 +65,7 @@
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .padding-group-first {
@@ -379,6 +423,7 @@
   display: flex;
   flex-direction: row;
   gap: 1rem;
+  align-items: center;
 }
 
 .contact-details-larger {
