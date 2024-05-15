@@ -1,0 +1,31 @@
+.small-slider-container {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 8rem;
+  margin-bottom: 12rem;
+  overflow: hidden;
+  
+}
+
+.slider-container {
+  max-width: 100vw;
+}
+
+.slider-item {
+  height: auto;
+}
+
+
+@media (max-width: 1200px ) {
+  .small-slider-container {
+    padding: 0 4rem;
+    margin-bottom: 6rem;
+  }
+}
+@media (max-width: 900px) {
+ .small-slider-container {
+  padding: 0 2rem;
+  margin-bottom: 2rem;
+ }
+}
+

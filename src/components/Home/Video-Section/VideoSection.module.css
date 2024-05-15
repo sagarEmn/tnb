@@ -1,0 +1,26 @@
+.video {
+    max-width: 300px;
+    width: 100%;
+    object-fit: contain;
+    overflow: hidden;
+}
+.video::-webkit-media-controls {
+    display: none !important;
+}
+
+.video::-webkit-media-controls-enclosure {
+    display: none !important;
+}
+
+.video::-webkit-media-controls-panel {
+    display: none !important;
+}
+
+.video-outer-container {
+    height: 450px;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin: 0 3rem;
+    overflow: hidden;
+}

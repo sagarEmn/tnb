@@ -1,0 +1,179 @@
+.gallery-container {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: 0 19rem;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
+  height: auto;
+  max-width: fit-content;
+  width: 100vw;
+  
+}
+
+
+.gallery-heading {
+  width: 100%;
+  text-align: left;
+  font-size: 9rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.gallery-box {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 30px;
+}
+
+.gallery-box img {
+  object-fit: contain;
+  height: 90%;
+  width: 100%;
+  display: flex;
+}
+
+.gallery-box-second {
+  margin-bottom: 30px;
+}
+
+.portfolio-btn {
+  font-weight: 700;
+  line-height: 1.4em;
+  background-color: #5bc0de;
+  font-size: 2rem;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 1rem;
+  border-radius: 2rem;
+}
+
+.gallery-image,
+.gallery-text {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.description-one {
+  column-gap: 0px;
+  color: #4c4d4f;
+  font-family: "Roboto", Sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.description-one p {
+  column-gap: 0px;
+  color: #4c4d4f;
+  font-family: "Roboto", Sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.description-one-small {
+  column-gap: 0px;
+  color: #4c4d4f;
+  font-family: "Roboto", Sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.description-one-title {
+  font-weight: 900;
+}
+
+.second-line {
+  color: #3d3d3d;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 57px;
+  letter-spacing: -1.6px;
+  margin: 0;
+  padding-left: 2.5rem;
+}
+
+.three-images-gallery img {
+  max-width: 100%;
+  height: auto;
+}
+
+.texts-contain {
+  display: flex;
+  flex-direction: column;
+}
+
+.texts-contain .first-line {
+  color: #3d3d3d;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 57px;
+  letter-spacing: -1.6px;
+  margin: 0;
+}
+
+.separator {
+  width: 100%;
+  margin: 20px 0;
+  border: 1px solid #ffffff;
+}
+
+.gallery-container .gallery-box:nth-child(2) {
+  flex-direction: row-reverse;
+}
+
+@media (max-width: 1700px) {
+  .gallery-container {
+    padding: 0 12rem;
+  }
+}
+
+@media (max-width: 1450px) {
+  .gallery-container {
+    padding: 0 8rem;
+  }
+}
+
+@media (max-width: 1250px) {
+  .gallery-container {
+    padding: 0 6rem;
+  }
+}
+
+@media (max-width: 1160px) {
+  .gallery-container {
+    padding: 0 3rem;
+  }
+}
+
+@media (max-width: 950px) {
+  .three-image-gallery-box .first-line {
+    font-size: 1.7rem;
+  }
+  .description-one {
+    font-size: 0.8rem;
+  }
+  .second-line {
+    font-size: 1.4rem;
+  }
+  .gallery-container {
+    padding: 0 1.5rem;
+  }
+}
