@@ -25,38 +25,40 @@ export default function Home() {
       <Slider />
       <hr />
       <AutoPlay />
-      <h3 className="display-2 mb-4 fw-medium text-center">We Provide</h3>
-      <HomeImage
-        firstH4={"Interior Design"}
-        secondH4={
-          "Interior Design with quality,beautiful and stand out inspirational show homes in order to ultimately secure the sale of a given property."
-        }
-        imageIndex={fifthImage}
-      />
+      <div className={globalStyles["outer-container"]}>
+        <div className={`${globalStyles["padding-container"]}`}>
+          <h3 className="display-2 mb-4 fw-medium text-center">We Provide</h3>
+          <HomeImage
+            firstH4={"Interior Design"}
+            secondH4={
+              "Interior Design with quality,beautiful and stand out inspirational show homes in order to ultimately secure the sale of a given property."
+            }
+            imageIndex={fifthImage}
+          />
 
-      <ImageHome
-        firstH4={"House and Bungalow Renovation"}
-        secondH4={
-          "House and Bunaglow Renovation includes interior and exterior appearance, garde, bathrooms, kitchesn, FLooring. "
-        }
-      
-        imageIndex={thirdImage}
-      />
-      <HomeImage
-        firstH4={"Condominium Renovation"}
-        secondH4={
-          "We offer condo renovation to customers in the Greater Bangkok Area Renovations include bathrooms, kitchens, FLooring and Electrical Wiring."
-        }
-        
-        imageIndex={fifthImage}
-      />
-      <ImageHome
-        firstH4={"Condominium Renovation"}
-        secondH4={
-          "We offer condo renovation to customers in the Greater Bangkok Area Renovations include bathrooms, kitchens, Flooring and Electrical Wiring."
-        }
-        imageIndex={fifthImage}
-      />
+          <ImageHome
+            firstH4={"House and Bungalow Renovation"}
+            secondH4={
+              "House and Bunaglow Renovation includes interior and exterior appearance, garde, bathrooms, kitchesn, FLooring. "
+            }
+            imageIndex={thirdImage}
+          />
+          <HomeImage
+            firstH4={"Condominium Renovation"}
+            secondH4={
+              "We offer condo renovation to customers in the Greater Bangkok Area Renovations include bathrooms, kitchens, FLooring and Electrical Wiring."
+            }
+            imageIndex={fifthImage}
+          />
+          <ImageHome
+            firstH4={"Condominium Renovation"}
+            secondH4={
+              "We offer condo renovation to customers in the Greater Bangkok Area Renovations include bathrooms, kitchens, Flooring and Electrical Wiring."
+            }
+            imageIndex={fifthImage}
+          />
+        </div>
+      </div>
     </>
   );
 }
