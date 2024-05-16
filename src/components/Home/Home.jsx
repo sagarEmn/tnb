@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import globalStyles from "../../global.module.css";
 import Slider from "./Slider/Slider";
 import AutoPlay from "./AutoPlay/AutoPlay";
 import HomeImage from "./HomeComponents/HomeImage";
