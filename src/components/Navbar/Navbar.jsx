@@ -20,7 +20,7 @@ export default function Navbar() {
         {/* Top left corner heading */}
         <Link to="/" className="navbar-logo">
           <img
-            src="/img/Logo.png"
+            src="/img/Logo1.png"
             border="0"
             style={{width: "10rem"}}
           />
