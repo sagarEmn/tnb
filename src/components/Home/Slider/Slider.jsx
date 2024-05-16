@@ -30,7 +30,7 @@ function Slider() {
     <section className="section">
       <div className="section-center">
         {people.map((item, indexPeople) => {
-          const { id, image, title, firstp, secondp } = item;
+          const { id, image, title} = item;
           let position = "nextSlide";
           if (indexPeople === index) {
             position = "activeSlide";
@@ -43,13 +43,11 @@ function Slider() {
           }
           return (
             <article className={position} key={id}>
-              <div className="image-container">
+              <div className="image-container-slide">
                 <img src={image} alt={id} className="person-img" />
               </div>
               <div className="description-container">
                 <h4>{title}</h4>
-                <p className="title">{firstp}</p>
-                <p className="title">{secondp}</p>
               </div>
             </article>
           );

@@ -28,6 +28,13 @@ article {
   transition: all 0.4s linear;
 }
 
+.image-container-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+}
+
 .person-img {
   border-radius: 0.5rem;
   max-width: 100%;
@@ -37,15 +44,19 @@ article {
 }
 
 .description-container {
+  background-color: white;
   color: #4c4d4f;
   font-family: "Roboto", Sans-serif;
   position: absolute;
   z-index: 3;
-  padding-left: 64%;
-  padding-right: 5%;
-  font-size: 1.4rem;
-  margin-top: 5rem;
+  font-size: 1rem;
+  margin-top: 26rem;
+  border-radius: 3rem;
+  padding: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
 }
+
 
 @media (max-width: 1734px) {
   .next {
@@ -55,8 +66,7 @@ article {
 
 @media (max-width: 1615px) {
   .description-container {
-    margin-top: 5rem;
-    font-size: 1.3rem;
+    margin-top: 26rem;
   }
 }
 
