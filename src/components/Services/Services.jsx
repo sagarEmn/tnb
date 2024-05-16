@@ -23,6 +23,19 @@ const Services = () => {
     <>
       <div className={globalStyles["outer-container"]}>
         <div className={`${globalStyles["padding-container"]}`}>
+           {/* nav location */}
+           <div
+            className={globalStyles["small-grayBackground"]}
+            data-aos="zoom-in"
+            data-aos-offset="0"
+          >
+            <div className={globalStyles["display-nav-location-center"]}>
+              <div className={globalStyles["first-line"]}>SERVICES</div>
+              <div className={globalStyles["px14-line"]}>
+                HOME {">"} SERVICES
+              </div>
+            </div>
+          </div>
           <ServicesImage
             firstH4={"Interior Design"}
             secondH4={

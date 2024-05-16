@@ -3,7 +3,6 @@ import styles from "../../../global.module.css";
 import { contactImageSources } from "../../globalImageSources";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Footer from "../../Footer/Footer";
 
 export default function ContactUs() {
   useEffect(() => {
@@ -22,7 +21,7 @@ export default function ContactUs() {
           className={styles["padding-group-middle-grayBackground"]}
           data-aos="fade-up"
         >
-          <div className={styles["title-description-image-container-grid"]}>
+          <div className={styles["title-description-image-container-grid"]} data-aos="zoom-in">
             <div className={styles["title-description-flexGap"]}>
               <p className={styles["first-line"]}>Contact Us</p>
               <p className={styles["third-line"]}>

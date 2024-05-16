@@ -30,18 +30,17 @@ const ContactPage = () => {
               </div>
             </div>
           </div>
-          <p className={globalStyles["first-line"]}> TNB Source</p>
-          <p className={globalStyles["first-line"]}>
-            {" "}
-            "We don't want to push our ideas on to customers, <br /> we simply
-            want to make what they want."
-          </p>
           {/* first location */}
           <section
             className="first-office"
             data-aos="fade-right"
             data-aos-delay="200"
           >
+            <p className={globalStyles["first-line"]}> TNB Source</p>
+            <p className={globalStyles["first-line"]}>
+              "We don't want to push our ideas on to customers, <br /> we simply
+              want to make what they want."
+            </p>
             <div className={globalStyles["contact-us-information"]}>
               <div className={globalStyles["contact-icons"]}>
                 <img src={contactImageSources[0]} alt="Map Icon" />

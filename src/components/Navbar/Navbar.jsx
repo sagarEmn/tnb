@@ -59,11 +59,6 @@ export default function Navbar() {
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="/inHouseProd" className="nav-links">
-              IN-HOUSE PRODUCTION
-            </Link>
-          </li>
-          <li className="nav-item">
             <Link to="/contactPage" className="nav-links">
               CONTACT US
             </Link>
