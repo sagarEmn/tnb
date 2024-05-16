@@ -21,12 +21,12 @@ const Footer = () => {
         <div
           className={`${globalStyles["padding-container"]} ${globalStyles["footer-flow"]}`}
         >
-          <div className={globalStyles["contact-us-information"]}>
+          <div className={globalStyles["contact-us-information-footer"]}>
             <div className={globalStyles["contact-icons"]}>
               <img src={contactImageSources[4]} alt="Mail Icon" />
             </div>
 
-            <div className={globalStyles["contact-details"]}>
+            <div className={globalStyles["contact-details-footer"]}>
               <p>tnbsource.th@gmail.com</p>
             </div>
           </div>
@@ -40,12 +40,12 @@ const Footer = () => {
           </p>
 
           <div
-            className={`${globalStyles["contact-details-align-center"]} ${globalStyles["contact-details-grid"]}`}
+            className={`${globalStyles["contact-details-align-center"]} ${globalStyles["contact-details-grid"]} ${globalStyles["center-map-icon"]}`}
           >
             <div className={globalStyles["contact-icons"]}>
               <img src={contactImageSources[0]} alt="Map Icon" />
             </div>
-            <div className={globalStyles["contact-details"]}>
+            <div className={`${globalStyles["contact-details-footer"]}`}>
               <p> Unit 20/1, Building (k19/2)</p>
               <p>Soi Phatthana Chonnabot - 3,</p>
               <p> Khlong Song Ton Nun, Lat Krabang,</p>

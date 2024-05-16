@@ -326,16 +326,27 @@
 }
 .galleryRow {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 0.2rem;
   justify-content: space-between;
   margin-bottom: 0.3rem;
 }
 
+.galleryRowCenter {
+  display: flex;
+  gap: 0.2rem;
+  justify-content: space-between;
+  margin-bottom: 0.3rem;
+}
 .gallerySectionImage {
   width: 100%;
-  height: 15rem;
+  height: 23rem;
   object-fit: cover;
+}
+.gallerySectionImageCenter {
+  width: 100%;
+  height: 23rem;
+  object-fit: contain;
 }
 
 @media (max-width: 500px) {
@@ -419,11 +430,25 @@
   min-width: 22px;
 }
 
+.center-map-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem; /* Adjust the gap as needed */
+}
+
 .contact-us-information {
   display: flex;
   flex-direction: row;
   gap: 1rem;
   align-items: center;
+}
+.contact-us-information-footer {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
 }
 
 .contact-details-larger {
@@ -439,6 +464,14 @@
   font-family: "Roboto", Sans-serif;
   font-size: 15px;
   font-weight: 500;
+}
+.contact-details-footer {
+  column-gap: 0px;
+  color: #4c4d4f;
+  font-family: "Roboto", Sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
 }
 
 .title-description-flexGap {
@@ -686,6 +719,13 @@
   }
   .contact-details {
     flex: 1;
+    column-gap: 0px;
+    color: #4c4d4f;
+    font-family: "Roboto", Sans-serif;
+    font-size: 0.7rem;
+    font-weight: 500;
+  }
+  .contact-details-footer {
     column-gap: 0px;
     color: #4c4d4f;
     font-family: "Roboto", Sans-serif;

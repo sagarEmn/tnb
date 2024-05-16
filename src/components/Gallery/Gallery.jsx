@@ -1,7 +1,6 @@
+import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-
-import React, { useEffect } from "react";
 
 import globalStyles from "../../global.module.css";
 import galleryImageSources from "./GalleryImageSources";
@@ -14,15 +13,6 @@ function Gallery() {
       easing: "ease-out",
     });
   }, []);
-  // Function to chunk the array into smaller arrays
-  const chunkArray = (arr, size) => {
-    return Array.from({ length: Math.ceil(arr.length / size) }, (_, index) =>
-      arr.slice(index * size, index * size + size)
-    );
-  };
-
-  // Chunk the imageUrls array into arrays of size 3
-  const chunkedUrls = chunkArray(galleryImageSources, 3);
 
   return (
     <>
@@ -42,25 +32,50 @@ function Gallery() {
             </div>
           </div>
 
-          {/* Loop through the chunkedUrls array and render each galleryRow */}
-          {chunkedUrls.map((chunk, index) => (
-            <div
-              key={index}
-              className={globalStyles.galleryRow}
-              data-aos="zoom-in"
-            >
-              {/* Loop through the images in the current chunk */}
-              {chunk.map((imageUrl, idx) => (
-                <img
-                  key={idx}
-                  src={imageUrl}
-                  alt={`Image ${index * 3 + idx + 1}`}
-                  border="0"
-                  className={globalStyles.gallerySectionImage}
-                />
-              ))}
-            </div>
-          ))}
+          <div
+            className={globalStyles.galleryRow}
+            data-aos="zoom-in"
+          >
+            <img
+              src={galleryImageSources[0]}
+              border="0"
+              className={globalStyles.gallerySectionImage}
+            />
+             <img
+              src={galleryImageSources[1]}
+              border="0"
+              className={globalStyles.gallerySectionImage}
+            />
+          </div>
+          <div
+            className={globalStyles.galleryRow}
+            data-aos="zoom-in"
+          >
+           
+         
+       
+            <img
+              src={galleryImageSources[2]}
+              border="0"
+              className={globalStyles.gallerySectionImage}
+            />
+      
+            <img
+              src={galleryImageSources[3]}
+              border="0"
+              className={globalStyles.gallerySectionImage}
+            />
+          </div>
+          <div
+            className={globalStyles.galleryRowCenter}
+            data-aos="zoom-in"
+          >
+            <img
+              src={galleryImageSources[4]}
+              border="0"
+              className={globalStyles.gallerySectionImageCenter}
+            />
+          </div>
         </div>
       </div>
     </>
