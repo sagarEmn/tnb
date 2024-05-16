@@ -5,12 +5,12 @@ const people = [
     title: "We don't want to push our Ideas onto Customers, we simply want to make what they Wish.",
   },
   {
-    id: 1,
+    id: 2,
     image: "img/slides/slideshow1.png",
     title: "Our Creative Ideas are Always Better than Yesterday's reality",
   },
   {
-    id: 1,
+    id: 3,
     image: "img/slides/slideshow2.png",
     title: "We are here to Design your Ideas into Today's reality",
   },

@@ -17,8 +17,8 @@ function AutoPlay() {
   const settings = {
     dots: true,
     infinite: true,
-    slidesToShow: 6,
-    slidesToScroll: 6,
+    slidesToShow: 3,
+    slidesToScroll: 2,
     autoplay: true,
     speed: 800,
     autoplaySpeed: 2000,
@@ -29,7 +29,6 @@ function AutoPlay() {
     <div className="small-slider-container" data-aos="zoom-in">
       <div className="slider-container">
         <Slider {...settings}>
-          {/* Map through the imported images array and generate img elements */}
           {images.map((imageUrl, index) => (
             <div className="slider-item" key={index}>
               <img src={imageUrl} alt={`Image ${index}`} />

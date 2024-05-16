@@ -1,30 +1,62 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Slider from "./Slider/Slider";
-import Gallery1 from "./Gallery1/Gallery1";
-import VideoSection from "./Video-Section/VideoSection";
-import InHouseProd from "./InHouseProd/InHouseProd";
-import WhatWeOffer from "./WhatWeOffer/WhatWeOffer";
-import ThreeImageGrid from "./ThreeImageGrid/ThreeImageGrid";
-import TenYearsExp from "./TenYearsExp/TenYearsExp";
 import AutoPlay from "./AutoPlay/AutoPlay";
-import BeforeAfterSlider from "./BeforeAfterSlider/BeforeAfterSlider";
-import ContactUs from "./ContactUs/ContactUs";
-import { homeThreeFirst, homeThreeSecond } from "./ThreeImageGrid/imageSources";
+import HomeImage from "./HomeComponents/HomeImage";
+import ImageHome from "./HomeComponents/ImageHome";
+import servicesImageSources from "../Services/ServicesImageSources";
 
 export default function Home() {
+  const firstImage = servicesImageSources[0];
+  const secondImage = servicesImageSources[1];
+  const thirdImage = servicesImageSources[2];
+  const fourthImage = servicesImageSources[3];
+  const fifthImage = servicesImageSources[4];
+  useEffect(() => {
+    AOS.init({
+      offset: 100,
+      duration: 950,
+      easing: "ease-out",
+    });
+  }, []);
   return (
     <>
       <Slider />
-      <Gallery1 />
-      <VideoSection />
-      <InHouseProd />
-      <WhatWeOffer />
-      <ThreeImageGrid imageSources={homeThreeFirst} />
-      <TenYearsExp />
-      <ThreeImageGrid imageSources={homeThreeSecond} />
+      <hr />
       <AutoPlay />
-      <BeforeAfterSlider />
-      <ContactUs />
+      <h3 className="display-2 mb-4 fw-medium text-center">We Provide</h3>
+      <HomeImage
+        firstH4={"Interior Design"}
+        secondH4={
+          "Interior Design with quality,beautiful and stand out inspirational show homes in order to ultimately secure the sale of a given property."
+        }
+        imageIndex={fifthImage}
+      />
+
+      <ImageHome
+        firstH4={"House and Bungalow Renovation"}
+        secondH4={
+          "House and Bunaglow Renovation includes interior and exterior appearance, garde, bathrooms, kitchesn, FLooring. "
+        }
+      
+        imageIndex={thirdImage}
+      />
+      <HomeImage
+        firstH4={"Condominium Renovation"}
+        secondH4={
+          "We offer condo renovation to customers in the Greater Bangkok Area Renovations include bathrooms, kitchens, FLooring and Electrical Wiring."
+        }
+        
+        imageIndex={fifthImage}
+      />
+      <ImageHome
+        firstH4={"Condominium Renovation"}
+        secondH4={
+          "We offer condo renovation to customers in the Greater Bangkok Area Renovations include bathrooms, kitchens, Flooring and Electrical Wiring."
+        }
+        imageIndex={fifthImage}
+      />
     </>
   );
 }

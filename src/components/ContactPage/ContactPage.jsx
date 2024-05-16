@@ -30,9 +30,18 @@ const ContactPage = () => {
               </div>
             </div>
           </div>
-
+          <p className={globalStyles["first-line"]}> TNB Source</p>
+          <p className={globalStyles["first-line"]}>
+            {" "}
+            "We don't want to push our ideas on to customers, <br /> we simply
+            want to make what they want."
+          </p>
           {/* first office dubai hq */}
-          <section className="first-office" data-aos="fade-right" data-aos-delay="200">
+          <section
+            className="first-office"
+            data-aos="fade-right"
+            data-aos-delay="200"
+          >
             <div className={globalStyles["contact-us-information"]}>
               <div className={globalStyles["contact-icons"]}>
                 <img src={contactImageSources[0]} alt="Map Icon" />
@@ -65,7 +74,11 @@ const ContactPage = () => {
           </section>
 
           {/* second office turkey office */}
-          <section className="second-office" data-aos="fade-left" data-aos-delay="200">
+          <section
+            className="second-office"
+            data-aos="fade-left"
+            data-aos-delay="200"
+          >
             <div className={globalStyles["contact-us-information"]}>
               <div className={globalStyles["contact-icons"]}>
                 <img src={contactImageSources[0]} alt="Map Icon" />
@@ -94,8 +107,8 @@ const ContactPage = () => {
             </div>
           </section>
         </div>
-      </div>`
-      `
+      </div>
+      ` `
       <ContactUs />
     </>
   );

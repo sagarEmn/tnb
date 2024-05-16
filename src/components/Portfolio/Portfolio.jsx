@@ -1,5 +1,6 @@
 import React from "react";
 import TeamSection from "./PortfolioComponents/TeamSection";
+import globalStyles from "../../global.module.css";
 import ProductsShowcase from "./PortfolioComponents/ProductsShowcase";
 
 function Portfolio() {

@@ -9,7 +9,7 @@ import globalStyles from "../../global.module.css";
 const Footer = () => {
   useEffect(() => {
     AOS.init({
-      offset: 100,
+      offset: 300,
       duration: 950,
       easing: "ease-out",
     });
