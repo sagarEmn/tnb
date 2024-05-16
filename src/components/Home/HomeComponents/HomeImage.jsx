@@ -7,7 +7,7 @@ function HomeImage({ firstH4, secondH4, imageIndex, description, readMore }) {
     <>
       <div
         className={globalStyles["padding-group-middle"]}
-        data-aos="fade-left"
+        data-aos="fade-right"
       >
         <div className={globalStyles["title-description-image-container"]}>
           <div className={globalStyles["title-description"]}>
