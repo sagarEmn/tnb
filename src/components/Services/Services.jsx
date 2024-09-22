@@ -5,6 +5,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import servicesImageSources from "./ServicesImageSources";
 import ServiceItem from "./ServiceItem"; // Import ServiceItem component
+import ProductionCenter from "./ProductionCenter";
 
 const Services = () => {
   useEffect(() => {
@@ -65,7 +66,9 @@ const Services = () => {
             imageFirst={true}
           />
         </div>
+
       </div>
+      <ProductionCenter />
     </>
   );
 };
