@@ -12,7 +12,7 @@ const Footer = () => {
   }, []);
 
   return (
-<footer className="bg-purple-600 text-white custom-padding">
+<footer className="text-white custom-padding">
 <div
         className="container mx-auto flex flex-col sm:flex-row justify-between items-start space-y-8 sm:space-y-0"
         data-aos="zoom-in"
