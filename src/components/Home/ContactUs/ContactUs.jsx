@@ -95,7 +95,8 @@ export default function ContactUs() {
             ></textarea>
             <button
               type="submit"
-              className="bg-blue-500 text-white px-6 py-2 rounded-md hover:bg-blue-600 transition duration-300"
+              disabled
+              className="bg-blue-500 text-white px-6 py-2 rounded-md hover:bg-blue-600 transition duration-300 hover:cursor-pointer"
             >
               Send Message
             </button>
