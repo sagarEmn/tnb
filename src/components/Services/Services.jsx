@@ -18,8 +18,8 @@ const Services = () => {
 
   return (
     <>
-      <div className={globalStyles["outer-container"]}>
-        <div className={`${globalStyles["padding-container"]}`}>
+      <div className="container mx-auto px-2">
+        <div >
           {/* nav location */}
           <div
             className={globalStyles["small-grayBackground"]}

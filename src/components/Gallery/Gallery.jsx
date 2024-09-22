@@ -16,7 +16,7 @@ function Gallery() {
 
   return (
     <>
-      <div className={globalStyles["outer-container"]}>
+      <div className="container mx-auto px-2">
         <div className={globalStyles["padding-container"]}>
           {/* nav location */}
           <div

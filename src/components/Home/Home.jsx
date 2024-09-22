@@ -30,8 +30,8 @@ const Home = () => {
       <hr />
       <AutoPlay />
 
-      <div className={globalStyles["outer-container"]}>
-        <div className={`${globalStyles["padding-container"]}`}>
+      <div className="container mx-auto px-2">
+        <div >
         
           <h3 className="display-2 mb-4 fw-medium text-center">We Provide</h3>
           <HomeItem
