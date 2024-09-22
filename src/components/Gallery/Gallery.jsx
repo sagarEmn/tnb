@@ -13,7 +13,7 @@ function Gallery() {
   }, []);
 
   return (
-    <div className="bg-gray-100 min-h-screen">
+    <div className="bg-gray-100 min-h-screen overflow-hidden">
       <div className="bg-gray-200 py-8" data-aos="zoom-in" data-aos-offset="0">
         <div className="container mx-auto text-center">
           <h1 className="text-3xl font-bold mb-2">GALLERY</h1>
