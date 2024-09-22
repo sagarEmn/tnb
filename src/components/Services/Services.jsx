@@ -66,9 +66,11 @@ const Services = () => {
             imageFirst={true}
           />
         </div>
-
       </div>
       <ProductionCenter />
+      <div className="map-image container mx-auto px-4 py-8">
+        <img className="mx-auto" src="./img/mapimage.jpg" alt="" />
+      </div>
     </>
   );
 };

@@ -22,7 +22,8 @@ export default function Navbar() {
           <img
             src="/img/Logo1.png"
             border="0"
-            style={{width: "10rem"}}
+            style={{ width: "10rem" }}
+            className="bg-white rounded-xl p-2"
           />
         </Link>
         {/* Nav Icon */}
@@ -41,6 +42,11 @@ export default function Navbar() {
           <li className="nav-item">
             <Link to="/" className="nav-links">
               HOME
+            </Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/about-us" className="nav-links">
+              ABOUT US
             </Link>
           </li>
           <li className="nav-item">

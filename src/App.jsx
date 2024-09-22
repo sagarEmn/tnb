@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import Home from "./components/Home/Home";
 import "./index.css";
+import AboutUs from "./components/AboutUs";
 import Portfolio from "./components/Portfolio/Portfolio";
 import Services from "./components/Services/Services";
 import Gallery from "./components/Gallery/Gallery";
@@ -20,6 +21,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/about-us" element={<AboutUs />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/services" element={<Services />} />
         <Route path="/gallery" element={<Gallery />} />
