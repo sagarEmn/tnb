@@ -18,11 +18,11 @@ export default function ContactUs() {
     <>
       <div className={styles["outer-container"]}>
         <div
-          className={styles["padding-group-middle-grayBackground"]}
+          
           data-aos="fade-up"
         >
           <div className={styles["title-description-image-container-grid"]} data-aos="zoom-in">
-            <div className={styles["title-description-flexGap"]}>
+            <div className="flex gap-4">
               <p className={styles["first-line"]}>Contact Us</p>
               <p className={styles["third-line"]}>
                 "We don't want to push our ideas on to customers, <br /> we
@@ -79,7 +79,7 @@ export default function ContactUs() {
               </div>
             </div>
 
-            <div className={styles["title-description-flexGap"]}>
+            <div className="flex gap-4">
               <p className={styles["first-line"]}>Drop Us A Line</p>
 
               <div className={styles["contact-us-information"]}>

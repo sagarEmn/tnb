@@ -19,13 +19,9 @@ const Services = () => {
   return (
     <>
       <div className="container mx-auto px-2">
-        <div >
+        <div>
           {/* nav location */}
-          <div
-            className={globalStyles["small-grayBackground"]}
-            data-aos="zoom-in"
-            data-aos-offset="0"
-          >
+          <div data-aos="zoom-in" data-aos-offset="0">
             <div className={globalStyles["display-nav-location-center"]}>
               <div className={globalStyles["first-line"]}>SERVICES</div>
               <div className={globalStyles["px14-line"]}>

@@ -10,31 +10,24 @@ function ServiceItem({
   imageFirst = false,
 }) {
   const ContentSection = () => (
-    <div className={globalStyles["title-description"]}>
-      <p className={globalStyles["first-line"]}>{firstH4}</p>
-      <p className={globalStyles["third-line"]}>{secondH4}</p>
-      <div
-        className={
-          globalStyles[imageFirst ? "description-one-small" : "description-one"]
-        }
-      >
-        <p>{description}</p>
+    <div className="max-w-2xl mx-auto text-left">
+      <h2 className="font-bold text-3xl">{firstH4}</h2>
+      <h3 className="text-2xl">{secondH4}</h3>
+      <div>
+        <p className="text-lg">{description}</p>
       </div>
     </div>
   );
 
   const ImageSection = () => (
-    <div className={globalStyles["image"]}>
+    <div>
       <img src={imageIndex} alt={firstH4} />
     </div>
   );
 
   return (
-    <div
-      className={globalStyles["padding-group-middle"]}
-      data-aos={imageFirst ? "fade-right" : "fade-left"}
-    >
-      <div className={globalStyles["title-description-image-container"]}>
+    <div data-aos={imageFirst ? "fade-right" : "fade-left"} className="mx-auto">
+      <div className="flex gap-2 items-center">
         {imageFirst ? (
           <>
             <ImageSection />

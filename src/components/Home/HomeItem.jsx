@@ -10,15 +10,11 @@ function HomeItem({
   imageFirst = false,
 }) {
   const ContentSection = () => (
-    <div className={globalStyles["title-description"]}>
-      <h2 className={globalStyles["first-line"]}>{title}</h2>
-      <h3 className={globalStyles["third-line"]}>{subtitle}</h3>
-      <div
-        className={
-          globalStyles[imageFirst ? "description-one-small" : "description-one"]
-        }
-      >
-        <p>{description}</p>
+    <div className="max-w-2xl mx-auto text-left">
+      <h2 className="font-bold text-3xl">{title}</h2>
+      <h3 className="text-2xl">{subtitle}</h3>
+      <div>
+        <p className="text-lg">{description}</p>
       </div>
     </div>
   );
@@ -30,12 +26,9 @@ function HomeItem({
   );
 
   return (
-    <div
-      className={globalStyles["padding-group-middle"]}
-      data-aos={imageFirst ? "fade-right" : "fade-left"}
-    >
-      <div className={globalStyles["title-description-image-container"]}>
-        {imageFirst ? (
+    <div data-aos={imageFirst ? "fade-right" : "fade-left"}>
+      <div className="flex gap-2 items-center">
+      {imageFirst ? (
           <>
             <ImageSection />
             <ContentSection />
