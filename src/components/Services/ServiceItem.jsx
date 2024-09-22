@@ -1,6 +1,4 @@
-// ServiceItem.jsx
 import React from "react";
-import globalStyles from "../../global.module.css";
 
 function ServiceItem({
   firstH4,
@@ -10,9 +8,9 @@ function ServiceItem({
   imageFirst = false,
 }) {
   const ContentSection = () => (
-    <div className="max-w-2xl mx-auto text-left">
-      <h2 className="font-bold text-3xl">{firstH4}</h2>
-      <h3 className="text-2xl">{secondH4}</h3>
+    <div className="flex-1 px-6">
+      <h2 className="font-bold text-3xl mb-4">{firstH4}</h2>
+      <h3 className="text-2xl mb-4">{secondH4}</h3>
       <div>
         <p className="text-lg">{description}</p>
       </div>
@@ -20,25 +18,19 @@ function ServiceItem({
   );
 
   const ImageSection = () => (
-    <div>
-      <img src={imageIndex} alt={firstH4} />
+    <div className="flex-1">
+      <img src={imageIndex} alt={firstH4} className="w-full h-auto object-cover" />
     </div>
   );
 
   return (
-    <div data-aos={imageFirst ? "fade-right" : "fade-left"} className="mx-auto">
-      <div className="flex gap-2 items-center">
-        {imageFirst ? (
-          <>
-            <ImageSection />
-            <ContentSection />
-          </>
-        ) : (
-          <>
-            <ContentSection />
-            <ImageSection />
-          </>
-        )}
+    <div 
+      data-aos={imageFirst ? "fade-right" : "fade-left"} 
+      className="mx-auto my-16 max-w-6xl"
+    >
+      <div className={`flex ${imageFirst ? 'flex-row' : 'flex-row-reverse'} gap-8 items-center`}>
+        <ImageSection />
+        <ContentSection />
       </div>
     </div>
   );
