@@ -18,7 +18,7 @@ export default function Navbar() {
     <nav className="navbar">
       <div className="navbar-container">
         {/* Top left corner heading */}
-        <Link to="/" className="navbar-logo">
+        <Link to="/" className="navbar-logo" style={{ zIndex: 0 }}>
           <img
             src="/img/Logo1.png"
             border="0"
@@ -32,13 +32,14 @@ export default function Navbar() {
           onClick={() => {
             setMenuOpen(!menuOpen);
           }}
+          style={{ zIndex: 10 }}
         >
           <span></span>
           <span></span>
           <span></span>
         </div>
         {/* Navigation links */}
-        <ul className={`nav-menu ${menuOpen ? "active" : ""}`}>
+        <ul className={`nav-menu ${menuOpen ? "active" : ""}`} style={{ zIndex: 5 }}>
           <li className="nav-item">
             <Link to="/" className="nav-links">
               HOME

@@ -12,7 +12,7 @@ const Footer = () => {
   }, []);
 
   return (
-    <footer className="bg-purple-600 text-white sm:p-2 lg:p-12 lg:px-28">
+    <footer className="bg-purple-600 text-white p-2 sm:p-8 lg:p-12 lg:px-28">
       <div
         className="container mx-auto flex flex-col sm:flex-row justify-between items-start space-y-8 sm:space-y-0"
         data-aos="zoom-in"
