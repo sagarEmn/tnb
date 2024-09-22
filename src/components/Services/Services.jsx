@@ -23,7 +23,7 @@ const Services = () => {
           <div className={globalStyles["px14-line"]}>HOME {">"} SERVICES</div>
         </div>
       </div>
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-2 lg:px-4">
         <ServiceItem
           firstH4="Interior Design"
           secondH4="GetLance is a great place to find more clients, and to run and grow your own freelance business"

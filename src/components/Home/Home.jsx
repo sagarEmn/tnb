@@ -30,7 +30,7 @@ const Home = () => {
       <hr />
       <AutoPlay />
 
-      <div className="container mx-auto px-2">
+      <div className="container mx-auto px-2 lg:px-4">
         <div >
         
           <h3 className="display-2 mb-4 fw-medium text-center">We Provide</h3>
